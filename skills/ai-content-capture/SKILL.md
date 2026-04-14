@@ -213,38 +213,6 @@ metadata:
 
 ---
 
-## 飞书 CLI 集成
-
-素材抓取完不是终点，流转起来才有价值：
-
-```bash
-# 把提炼好的素材库同步到飞书云文档
-lark-cli docs +create --markdown .agents/content-library/index.md --title "营销素材库"
-
-# 高优先级素材自动通知市场群
-lark-cli im +messages-send --chat-id oc_xxx --markdown "🔴 高优素材：竞品发布了 XX 功能，我们的差异化机会是..."
-
-# 在飞书多维表格里建素材管理看板
-lark-cli base table create --app-token xxx --name "素材库" \
-  --fields "标题,来源,类型,优先级,时效性,状态"
-
-# 用飞书任务追踪素材的内容产出
-lark-cli task +create --title "基于竞品动态产出对比文章" --due "2026-04-18"
-```
-
----
-
-## 野路子
-
-- **别等 changelog 出来再提炼**。直接盯 GitHub commit log 和内部飞书群的工程讨论，你能比 PM 更早知道下个版本有什么值得吹的
-- **去竞品的 Discord/社区/GitHub Issues 里潜水**。用户的吐槽 = 你的差异化弹药。用户的需求 = 你的内容选题
-- **监控 Hacker News、Reddit、即刻的讨论**。行业讨论刚起来就参与，别等成了热点再追——追热点永远追不上，造热点才是本事
-- **用户评价不要只收集正面的**。负面评价里的「虽然 XX 不好但我还是用因为 YY」，比五星好评有用 100 倍
-- **Benchmark 数据只讲你赢的维度，但要诚实**。选择性呈现 ≠ 造假。找到你真正强的点，说透它
-- **搜索引擎搜「XX（你的产品）vs YY（竞品）」**，看用户在自发对比什么维度——这就是你应该强化的内容
-
----
-
 ## Notes
 
 - 始终从营销角度而非技术角度提炼，核心问题是「用户为什么应该在乎」

@@ -268,43 +268,6 @@ Best,
 
 ---
 
-## 飞书 CLI 集成
-
-传播不只是写内容，还有大量的协作和追踪：
-
-```bash
-# 写完内容自动同步到飞书文档，方便团队审阅
-lark-cli docs +create --markdown ./draft.md --title "新功能发布推文 - 待审"
-
-# 发布后在飞书群通知团队各渠道链接
-lark-cli im +messages-send --chat-id oc_xxx --markdown $'## 🚀 内容已发布\n\n- Twitter: [link]\n- 公众号: [link]\n- 知乎: [link]\n\n请大家帮忙转发！'
-
-# 用飞书任务追踪各渠道的发布状态
-lark-cli task +create --title "Twitter 发布新功能推文" --due "2026-04-15"
-lark-cli task +create --title "公众号发布深度解读" --due "2026-04-16"
-
-# 复盘数据录入飞书多维表格
-lark-cli base record create --app-token xxx --table "传播复盘" \
-  --data '{"渠道":"Twitter","曝光":12000,"互动":450,"转化":23}'
-
-# 发布日用日历提醒卡点
-lark-cli calendar +create --summary "🚀 新功能发布 - 09:00 博客 / 10:00 Twitter" --start "2026-04-15T08:30:00"
-```
-
----
-
-## 野路子
-
-- **AI Demo 的 GIF 比任何文案都管用**。一个 wow moment 顶一千字。录一个 15 秒的 Demo GIF，配一句话，发出去
-- **让工程师自己发推/发朋友圈**。工程师以个人身份分享的技术内容，互动量是官方账号的 10 倍。别写稿子让他们发——给他们一个核心信息点，让他们用自己的话说
-- **在 GitHub README 里做营销**——这是开发者产品最被低估的营销渠道。README 的第一屏就是你的 Landing Page
-- **Product Hunt 不要 Launch Day 才开始**。提前两周开始在社区里活跃，Launch Day 当天你已经有一群会帮你投票的人了
-- **内容发布后 30 分钟是黄金时间**。这 30 分钟里你要做的事：自己先转发+评论、@相关人、在 3-5 个社区同步、回复前 10 条评论
-- **别在所有平台发一样的内容**。Twitter 要短要猛，知乎要深要有干货，小红书要有图要有教程感，B 站要有人格要有故事。同一个素材改写 5 个版本，比 1 个版本发 5 个平台有效 10 倍
-- **竞品出大新闻的时候，是你最好的传播窗口**。不是去踩竞品，是借势。「看到 XX 发布了 YY，顺便分享一下我们在这个方向的思考」
-
----
-
 ## Notes
 
 - AI 产品传播的核心是**让技术价值可感知**，避免堆砌技术参数

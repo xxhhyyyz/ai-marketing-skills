@@ -394,49 +394,6 @@ D+1:  感谢信 + 内容分享
 
 ---
 
-## 飞书 CLI 集成
-
-活动筹备 80% 是行政工作，让 Agent + 飞书 CLI 帮你干：
-
-```bash
-# 一键创建活动 checklist 到飞书任务
-lark-cli task +create --title "T-30: 场地预订确认" --due "2026-05-01"
-lark-cli task +create --title "T-14: 嘉宾 PPT 收集截止" --due "2026-05-15"
-lark-cli task +create --title "T-7: Demo 环境测试" --due "2026-05-22"
-lark-cli task +create --title "T-1: 最终彩排" --due "2026-05-28"
-
-# 创建活动日程提醒
-lark-cli calendar +create --summary "🎤 AI 开发者日" --start "2026-05-29T09:00:00" --end "2026-05-29T18:00:00"
-
-# 建活动筹备群
-lark-cli im +chat-create --name "AI 开发者日筹备群" --user-ids "ou_xxx,ou_yyy"
-
-# 在群里发嘉宾邀请跟进状态
-lark-cli im +messages-send --chat-id oc_xxx --markdown $'## 嘉宾确认状态\n\n- ✅ 张三 - 已确认\n- ⏳ 李四 - 待回复\n- ❌ 王五 - 无法参加'
-
-# 活动后复盘数据录入多维表格
-lark-cli base record create --app-token xxx --table "活动复盘" \
-  --data '{"活动名称":"AI 开发者日","报名":320,"到场":245,"到场率":"76%"}'
-
-# 活动回顾文档直接发飞书
-lark-cli docs +create --markdown ./event-recap.md --title "AI 开发者日回顾"
-```
-
----
-
-## 野路子
-
-- **别做大会做小局**。30 人的闭门 Workshop 转化率吊打 500 人的峰会。与其花 20 万办一场大会，不如花 2 万办 10 场小局
-- **AI 产品的 Demo 环节让观众出题**。观众自己出的 prompt 产出的效果，说服力是你准备好的 demo 的 100 倍。准备好兜底方案就行
-- **活动结束后 30 分钟内出回顾推文**。让 Agent 当场根据照片和笔记生成——隔天出的活动回顾没人看
-- **嘉宾邀请别发正式邮件，先在社交媒体上互动**。先点赞、评论、转发对方的内容两周，然后再发邀请，接受率翻倍
-- **签到别用扫码，用一个让人想拍照的装置**。AI 产品可以做实时人脸生成头像、AI 似颜绘——签到本身就是传播素材
-- **嘉宾的 PPT 不重要，嘉宾的「金句」才重要**。安排一个人专门记金句，活动还没结束金句海报就做好了
-- **活动现场最好的内容不是台上的演讲，是茶歇时的聊天**。安排足够长的茶歇时间，拍足够多的交流照片
-- **把每次活动的 checklist 更新回这个 skill**。你踩过的坑就是下次的护栏
-
----
-
 ## Notes
 
 - AI 产品活动的核心差异化是**现场 Demo**，务必投入足够准备
